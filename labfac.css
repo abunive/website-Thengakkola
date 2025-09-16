@@ -1,0 +1,183 @@
+/* ---------- GENERAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #222;
+}
+
+/* ---------- NAVBAR ---------- */
+header {
+  background: #0a1a63;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 12px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #0d2a8f;
+  border-radius: 5px;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0a1a63;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #0a1a63;
+}
+
+h3 {
+  color: #0a1a63;
+}
+
+/* ---------- CONTENT BLOCK ---------- */
+.content-block {
+  margin: 40px 0;
+}
+
+/* ---------- HOD SECTION ---------- */
+.hod-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.hod-img {
+  text-align: center;
+  width: 220px;
+}
+
+.hod-img img {
+  width: 180px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.hod-img h4 {
+  margin-top: 10px;
+}
+
+.hod-img span {
+  font-size: 14px;
+  color: gray;
+}
+
+.hod-text {
+  flex: 1;
+}
+
+/* ---------- FACULTY GRID ---------- */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.faculty-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #0a1a63;
+}
+
+.faculty-card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* ---------- LAB CARDS ---------- */
+.lab-card {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.lab-card img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.lab-card h3 {
+  margin-bottom: 8px;
+}
+
+.lab-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background: #0a1a63;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+  }
+
+  .hod-section,
+  .lab-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hod-img,
+  .lab-card img {
+    margin-bottom: 15px;
+  }
+}

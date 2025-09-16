@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #000;
+}
+
+/* Navbar */
+header {
+  background: #0a1a63;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
+}
+nav ul li a:hover {
+  background: #0d2a8f;
+  border-radius: 5px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: #0d2a8f;
+  border-radius: 5px;
+}
+
+/* ===== Page Title ===== */
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #2230a8;              /* Bright blue */
+}
+
+/* ===== Sections ===== */
+.section {
+  margin: 20px;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0d1a5a;
+  margin-bottom: 10px;
+}
+
+/* ===== Images Row ===== */
+.images-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.images-row div {
+  text-align: center;
+}
+
+.images-row img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.images-row p {
+  font-size: 13px;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0a1a63;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
